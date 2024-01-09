@@ -1,0 +1,44 @@
+# Ignore Visual Studio files
+.vs/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Ignore build output
+bin/
+obj/
+
+# Ignore NuGet packages
+*.nupkg
+packages/
+
+# Ignore Resharper files
+_ReSharper*/
+*.resharper*
+*.DotSettings.user
+
+# Ignore Visual Studio Code files
+.vscode/
+
+# Ignore build logs
+*.log
+
+# Ignore test results
+TestResults/
+
+# Ignore publish profiles
+*.pubxml
+
+# Ignore Roslyn analyzer cache
+RoslynAnalyzers/
+
+# Ignore StyleCop settings
+Settings.StyleCop
+
+# Ignore temporary files
+*.tmp
+*.bak
+*.cache
+*.swp
+*.DS_Store
