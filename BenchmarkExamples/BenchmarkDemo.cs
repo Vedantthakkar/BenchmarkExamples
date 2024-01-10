@@ -20,6 +20,7 @@ namespace BenchmarkExamples
         public void GlobalSetup()
         {
             //Write your initialization code here
+      
 
         //     var factory = new WebApplicationFactory<Startup>()
         // .WithWebHostBuilder(configuration =>

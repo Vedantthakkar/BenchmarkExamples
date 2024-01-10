@@ -7,7 +7,7 @@ namespace BenchmarkLib
     {
         public string StringConcatWithJoin(string[] input)
         {
-            return string.Join(",", input);
+            return string.Join(" ", input);
         }
 
         public string StringConcatWithStringBuilder(string[] input)

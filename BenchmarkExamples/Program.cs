@@ -1,5 +1,4 @@
 ﻿
-using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 
 namespace BenchmarkExamples
@@ -8,10 +7,9 @@ namespace BenchmarkExamples
     {
         static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run<ThreadingPerformance>();           
+            var summary = BenchmarkRunner.Run<StringConcatPerformance>();
+            Console.ReadLine();
         }
     }
 }
-
-
 
