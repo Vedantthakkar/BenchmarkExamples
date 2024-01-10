@@ -31,9 +31,9 @@ namespace BenchmarkExamples
 
         [Params(10, 100, 1000)] public int MaxRoutes { get; set; }
 
-        [Benchmark]
+        [Benchmark(Baseline = true)]
         public string DictionaryPlusStringManipulation()
-        {           
+        {
             _dictionaryPlusStringManipulation!.TryGet(_path, out var endpoint);
             return endpoint;
         }

@@ -7,7 +7,7 @@ namespace BenchmarkExamples
     {
         static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run<EndPointLookupPerformance>();           
+            var summary = BenchmarkRunner.Run<EndpointLookupwithMockPerformance>();           
         }
     }
 }
