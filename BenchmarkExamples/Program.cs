@@ -7,8 +7,7 @@ namespace BenchmarkExamples
     {
         static void Main(string[] args)
         {
-            var summary = BenchmarkRunner.Run<SquareSumPerformance>();
-            Console.ReadLine();
+            var summary = BenchmarkRunner.Run<EndPointLookupPerformance>();           
         }
     }
 }
