@@ -4,13 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+using BenchmarkDotNet.Attributes; // Added missing using statement
+
 namespace BenchmarkExamples
 {
 
     using BenchmarkDotNet.Attributes;
 
     [MemoryDiagnoser]
-    public class MyBenchmarkDemo
+    public class BenchmarkDemo
     {
 
         private static HttpClient _httpClient;
@@ -19,16 +21,16 @@ namespace BenchmarkExamples
         {
             //Write your initialization code here
 
-            var factory = new WebApplicationFactory<Startup>()
-        .WithWebHostBuilder(configuration =>
-        {
-            configuration.ConfigureLogging(logging =>
-            {
-                logging.ClearProviders();
-            });
-        });
+        //     var factory = new WebApplicationFactory<Startup>()
+        // .WithWebHostBuilder(configuration =>
+        // {
+        //     configuration.ConfigureLogging(logging =>
+        //     {
+        //         logging.ClearProviders();
+        //     });
+        // });
 
-            _httpClient = factory.CreateClient();
+        //     _httpClient = factory.CreateClient();
         }
 
         [Benchmark]

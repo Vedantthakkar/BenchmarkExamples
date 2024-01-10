@@ -1,23 +1,17 @@
 ﻿
 using BenchmarkDotNet.Attributes;
+using BenchmarkDotNet.Running;
 
-[MemoryDiagnoser]
-public class MyBenchmarkDemo
+namespace BenchmarkExamples
 {
-    [GlobalSetup]
-    public void GlobalSetup()
+    public class Program
     {
-        //Write your initialization code here
-    }
-
-    [Benchmark]
-    public void MyFirstBenchmarkMethod()
-    {
-        //Write your code here   
-    }
-    [Benchmark]
-    public void MySecondBenchmarkMethod()
-    {
-        //Write your code here
+        public static void Main(string[] args)
+        {
+            BenchmarkRunner.Run<BenchmarkDemo>();
+        }
     }
 }
+
+
+
