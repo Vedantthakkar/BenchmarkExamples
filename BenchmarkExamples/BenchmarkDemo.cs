@@ -18,17 +18,7 @@ namespace BenchmarkExamples
         public void GlobalSetup()
         {
             //Write your initialization code here
-
-            var factory = new WebApplicationFactory<Startup>()
-        .WithWebHostBuilder(configuration =>
-        {
-            configuration.ConfigureLogging(logging =>
-            {
-                logging.ClearProviders();
-            });
-        });
-
-            _httpClient = factory.CreateClient();
+      
         }
 
         [Benchmark]
