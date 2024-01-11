@@ -11,8 +11,6 @@ namespace BenchmarkExamples
 {
     internal class BenchmarkLINQPerformanceClass1
     {
-        public class BenchmarkLINQPerformance
-        {
             private readonly List<string>
             data = new List<string>();
 
@@ -31,7 +29,6 @@ namespace BenchmarkExamples
 
             [Benchmark]
             public string First() => data.FirstOrDefault(x => x.Equals("M"));
-        }
 
     }
 }
