@@ -16,8 +16,5 @@
     <ProjectReference Include="..\BenchmarkLib\BenchmarkLib.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <ProjectReference Include="..\BenchmarkLib\BenchmarkLib.csproj" />
-  </ItemGroup>
 
 </Project>
