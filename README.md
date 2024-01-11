@@ -25,13 +25,13 @@ To use this project, you need to have the following prerequisites installed:
 3. Build the project:
 
     ```shell
-    dotnet build
+    dotnet build -c Build
     ```
 
 4. Run the benchmarks:
 
     ```shell
-    dotnet run --configuration Release --project BenchmarkProject
+    dotnet run --configuration Release -f net6.0
     ```
 
 ## Contributing
