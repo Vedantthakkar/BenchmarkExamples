@@ -25,7 +25,7 @@ To use this project, you need to have the following prerequisites installed:
 3. Build the project:
 
     ```shell
-    dotnet build -c Build
+    dotnet build -c Release
     ```
 
 4. Run the benchmarks:
